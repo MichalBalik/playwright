@@ -1,0 +1,27 @@
+{
+  "name": "zadania",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "allTests": "playwright test",
+    "test": "playwright test",
+    "test:ui": "playwright test tests/ui",
+    "test:api": "playwright test tests/api",
+    "test:login": "playwright test tests/ui/login.spec.ts",
+    "test:create-user": "playwright test tests/api/create-user.spec.ts",
+    "test:get-users": "playwright test tests/api/get-users.spec.ts",
+    "test:api:users": "playwright test tests/api/create-user.spec.ts tests/api/get-users.spec.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^25.0.6"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1"
+  }
+}
