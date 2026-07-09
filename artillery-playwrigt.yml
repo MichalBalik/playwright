@@ -1,0 +1,9 @@
+config:
+  target: https://playwright.dev
+  engines:
+    playwright: {}
+  processor: "tests/ui/performance.js"
+scenarios:
+  - engine: playwright
+    flowFunction: "playwrightPerformance"
+    flow: []
